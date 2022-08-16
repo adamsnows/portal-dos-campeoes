@@ -9,11 +9,11 @@ const StyledLogin = styled.div`
     font-family: 'Inter';
     animation: 2s fadeInDown;
     .animation-header {
-        width: 20%;
+        width: 70%;
         animation: 4s fadeInDown;
     }
     .discord-animation {
-        width: 30%;
+        width: 40%;
     }
     .line-discord {
         display: flex;
@@ -59,7 +59,7 @@ const StyledLogin = styled.div`
         justify-content: center;
         flex-direction: column;
         gap: 20px;
-        box-shadow: 0px 0px 5px 8px rgba(0,0,0,0.1);
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
         .login-register {
             color: #9C9C9C;
             font-size: 0.8rem;
@@ -102,7 +102,7 @@ const StyledLogin = styled.div`
             padding: 10px;
             border-radius: 5px;
             border: none;
-            box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.2);
+            box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
             color: #9C9C9C;
             :focus {
                 outline: none;
@@ -125,12 +125,14 @@ const StyledLogin = styled.div`
         
         
     }
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 1024px) {
+        .animation-header {
+        width: 20%;
+    }
         .login-box {
             padding: 40px;
             width: 400px;
-            gap: 40px;
-            box-shadow: 0px 0px 5px 8px rgba(0,0,0,0.1);
+            gap: 30px;
         }
     }
 `;

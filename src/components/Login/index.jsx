@@ -13,7 +13,7 @@ const Login = () => {
 
   return (
     <StyledLogin>
-      <AnimationHeader />
+      {/* <AnimationHeader /> */}
       <div className="login-box">
         <span className="login-title">Portal dos Campeões</span>
         <span className="login-description">
