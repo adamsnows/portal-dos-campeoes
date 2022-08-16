@@ -21,7 +21,7 @@ const Login = () => {
           <label htmlFor="">Seu login</label>
           <input type="text" placeholder="seu-email@quentemail.com" />
           <label htmlFor="">Sua senha</label>
-          <input type="text" placeholder="Sua senha aqui" />
+          <input type="text" placeholder="********" />
           <span className="forgot-link">Esqueceu a senha?</span>
           <button>Entrar</button>
         </form>
