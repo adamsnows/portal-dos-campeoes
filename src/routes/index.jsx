@@ -3,8 +3,6 @@ import LoginPage from "../pages/Login";
 import RegisterPage from "../pages/Register";
 import PortalPage from "../pages/Portal";
 
-
-
 function App() {
   return (
     <>

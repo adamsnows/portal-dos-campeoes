@@ -2,9 +2,16 @@ import React, { useState } from "react";
 import StyledLogin from "./styles";
 import championImage from "../../images/champions.png";
 import { FaDiscord } from "react-icons/fa";
+import { useForm } from "react-hook-form";
+import { useContext } from "react";
+import { PortalContext } from "../../contexts/PortalProvider";
 
 const Login = () => {
   const [showPassword, setShowpassword] = useState();
+  const { register, handleSubmit } = useForm();
+
+  const { onSubmitLogin } = useContext(PortalContext);
+
   return (
     <StyledLogin>
       <img src={championImage} alt="" />
@@ -14,18 +21,28 @@ const Login = () => {
           Seja bem vindo ao portal, se não tem um cadastro entre em contato via
           discord!
         </span>
-        <div className="line-discord"><hr /> <FaDiscord /> <hr/></div>
-        
-        {/* fazer o icone do discord e os tracinhos */}
-        <form className="login-form">
+        <div className="line-discord">
+          <hr /> <FaDiscord /> <hr />
+        </div>
+        <form className="login-form" onSubmit={handleSubmit(onSubmitLogin)}>
           <label htmlFor="">Seu login</label>
-          <input type="text" placeholder="seu-email@quentemail.com" />
+          <input
+            {...register("email")}
+            type="email"
+            placeholder="seu-email@quentemail.com"
+          />
           <label htmlFor="">Sua senha</label>
-          <input type="text" placeholder="********" />
+          <input
+            {...register("password")}
+            type="password"
+            placeholder="********"
+          />
           <span className="forgot-link">Esqueceu a senha?</span>
           <button>Entrar</button>
         </form>
-        <span className="login-register">Não tem uma conta? <span className="register-link">Registre-se</span></span>
+        <span className="login-register">
+          Não tem uma conta? <span className="register-link">Registre-se</span>
+        </span>
       </div>
     </StyledLogin>
   );

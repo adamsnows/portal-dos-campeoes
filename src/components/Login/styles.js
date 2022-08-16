@@ -2,17 +2,12 @@ import styled from 'styled-components';
 import image from '../../images/background.jpg'
 
 const StyledLogin = styled.div`
-    width: 100vw;
-    height: 100vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-    background-image: url(${image});
-    background-size: cover;
-    background-repeat: no-repeat;
     font-family: 'Inter';
-    
+    animation: 2s fadeInDown;    
     .line-discord {
         display: flex;
         justify-content: center;
@@ -33,6 +28,7 @@ const StyledLogin = styled.div`
         border-radius: 10px;
         width: 60px;
         margin-bottom: 2rem;
+        box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.8);
     }
     .login-title {
         width: 80%;
@@ -67,6 +63,7 @@ const StyledLogin = styled.div`
         }
     .forgot-link {
         cursor: pointer;
+        text-decoration: underline;
     }
     .login-form {
         display: flex;
@@ -118,6 +115,7 @@ const StyledLogin = styled.div`
     @media screen and (min-width: 768px) {
         .login-box {
             width: 600px;
+            gap: 30px;
             box-shadow: 0px 0px 5px 8px rgba(0,0,0,0.2);
         }
     }
