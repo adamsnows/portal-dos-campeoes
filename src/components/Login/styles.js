@@ -7,13 +7,21 @@ const StyledLogin = styled.div`
     align-items: center;
     justify-content: center;
     font-family: 'Inter';
-    animation: 2s fadeInDown;    
+    animation: 2s fadeInDown;
+    .animation-header {
+        width: 20%;
+        animation: 4s fadeInDown;
+    }
+    .discord-animation {
+        width: 30%;
+    }
     .line-discord {
         display: flex;
         justify-content: center;
         align-items: center;
         width: 80%;
     }
+    
     hr {
         width: 40%;
         border: 1px solid rgba(156, 156, 156, 0.3);
@@ -28,10 +36,10 @@ const StyledLogin = styled.div`
         border-radius: 10px;
         width: 60px;
         margin-bottom: 2rem;
-        box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.8);
+        box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.5);
     }
     .login-title {
-        width: 80%;
+        width: 100%;
         font-weight: bolder;
         text-align: center;
         font-size: 2rem;
@@ -51,6 +59,7 @@ const StyledLogin = styled.div`
         justify-content: center;
         flex-direction: column;
         gap: 20px;
+        box-shadow: 0px 0px 5px 8px rgba(0,0,0,0.1);
         .login-register {
             color: #9C9C9C;
             font-size: 0.8rem;
@@ -62,6 +71,10 @@ const StyledLogin = styled.div`
             cursor: pointer;
         }
     .forgot-link {
+        cursor: pointer;
+        text-decoration: underline;
+    }
+    .discord-link {
         cursor: pointer;
         text-decoration: underline;
     }
@@ -114,9 +127,10 @@ const StyledLogin = styled.div`
     }
     @media screen and (min-width: 768px) {
         .login-box {
-            width: 600px;
-            gap: 30px;
-            box-shadow: 0px 0px 5px 8px rgba(0,0,0,0.2);
+            padding: 40px;
+            width: 400px;
+            gap: 40px;
+            box-shadow: 0px 0px 5px 8px rgba(0,0,0,0.1);
         }
     }
 `;
