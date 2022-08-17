@@ -7,7 +7,6 @@ import { AnimationDiscord, AnimationHeader } from "../Animation";
 import { useNavigate } from "react-router-dom";
 
 const Login = () => {
-  const [showPassword, setShowpassword] = useState();
   const { register, handleSubmit } = useForm();
   const { onSubmitLogin } = useContext(PortalContext);
   const navigate = useNavigate()
