@@ -7,11 +7,7 @@ const StyledLogin = styled.div`
     align-items: center;
     justify-content: center;
     font-family: 'Inter';
-    animation: 2s fadeInDown;
-    .animation-header {
-        width: 70%;
-        animation: 4s fadeInDown;
-    }
+    animation: 2s fadeIn;
     .discord-animation {
         width: 40%;
     }

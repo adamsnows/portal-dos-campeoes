@@ -42,12 +42,11 @@ const StyledRegister = styled.div`
         background-color: white;
         border-radius: 10px;
         width: 70%;
-        padding: 20px;
+        padding: 40px;
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        gap: 20px;
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
         .login-register {
             color: #9C9C9C;
@@ -102,7 +101,7 @@ const StyledRegister = styled.div`
             }
         }
         button {
-            margin-top: 1rem;
+            margin: 1rem 0 1rem 0;            
             width: 50%;
             border-radius: 5px;
             background-color: #313131;
