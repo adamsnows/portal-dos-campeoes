@@ -41,7 +41,7 @@ const Login = () => {
           <button>Entrar</button>
         </form>
         <span className="login-register">
-          Já tem um invite? <span className="register-link" onClick={() => navigate('./register')}>Registre-se</span>
+          Já tem um invite? <span className="register-link" onClick={() => navigate('/register')}>Registre-se</span>
         </span>
       </div>
     </StyledLogin>
