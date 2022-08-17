@@ -1,49 +1,68 @@
 import React from "react";
-import { Trophy } from "../../Animation";
+import { GiLaurelsTrophy } from "react-icons/gi";
 import { useNavigate } from "react-router-dom";
 const Header = () => {
   const navigate = useNavigate();
-  const handleLogin = () => {
-    const element = document.querySelector(".contentHeader");
-    element.classList.add(
+  
+  const handleFadeOut = () => {
+    const header = document.querySelector(".contentHeader");
+    header.classList.add(
       "animate__animated",
       "animate__fadeOutUp",
       "animate__fast"
     );
+    const main = document.querySelector('main')
+    main.classList.add(      
+    "animate__animated",
+    "animate__fadeOut",
+    "animate__fast"
+    )
+    const bg = document.querySelector('header')
+    bg.classList.add(   
+    "animate__animated",
+    "animate__fadeOut",
+    "animate__fast"
+    )
+  }
+  const handleRoot = () => {
+    const root = document.querySelector('#root')
+    root.classList.add(   
+    "animate__animated",
+    "animate__fadeIn",
+    "animate__fast"
+    )
+  }
+  const handleLogin = () => {
+    handleFadeOut()
     setTimeout(() => {
-      navigate("/login");
+      handleRoot()
+      navigate("/login");      
     }, "1000");
   };
   const handleRegister = () => {
-    const element = document.querySelector(".contentHeader");
-    element.classList.add(
-      "animate__animated",
-      "animate__fadeOutUp",
-      "animate__fast"
-    );
+    handleFadeOut()
     setTimeout(() => {
+      handleRoot()
       navigate("/register");
     }, "1000");
   };
+
+
   return (
     <div className="contentHeader">
-      <div className="title">
-        <h1 className="logo">
-          <div className="trophy">
-            <Trophy />
-          </div>
-          <span>
-            Portal dos <span className="champion-emphasis">Campeões</span>
-          </span>
-        </h1>
-      </div>
       <nav>
-        <button className="buttonRegister" onClick={handleRegister}>
-          Cadastre-se
-        </button>
-        <button className="buttonLogin" onClick={handleLogin}>
-          Entrar
-        </button>
+        <button>Suporte</button>
+        <hr></hr>
+        <button onClick={handleRegister}>Cadastre-se</button>
+        <hr></hr>
+        <div className="logo">
+          <GiLaurelsTrophy className="icon"></GiLaurelsTrophy>
+          <h1>Campeões</h1>
+        </div>
+        <hr></hr>
+        <button onClick={handleLogin}>Login</button>
+        <hr></hr>
+        <button>FeedBack</button>
       </nav>
     </div>
   );

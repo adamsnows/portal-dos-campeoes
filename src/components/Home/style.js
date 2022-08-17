@@ -1,11 +1,12 @@
 import styled from 'styled-components';
+import bg from '../../images/bghome.jpg'
 
 export const StyledHome = styled.header`
         width:100%;
         min-height:75vh;
         display:flex;
         flex-direction:column;
-        background-image: url("https://wallpaperaccess.com/full/38582.jpg");
+        background-image: url(${bg});
         background-position:center;
         background-repeat:no-repeat;
         background-size:cover;
@@ -13,7 +14,7 @@ export const StyledHome = styled.header`
         padding: 10px 0;
         display: flex;
         gap: 20px;
-
+        font-family: 'Inter';
     .contentHeader {
         display:flex;
         align-items:center;
@@ -58,8 +59,9 @@ export const StyledHome = styled.header`
         cursor: pointer;
         text-transform: uppercase;
         font-size:0.7rem;
+        transition: 0.5s;
 
-        &:hover {
+        :hover {
             color: #60707b;
         }
     }
