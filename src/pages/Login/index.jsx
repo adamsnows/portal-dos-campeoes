@@ -1,13 +1,13 @@
 import React from "react";
-import StyledBackground from "../../components/Background/styles";
+import Background from "../../components/Background/styles";
 import Login from "../../components/Login";
 
 
 const LoginPage = () => {
   return (
-    <StyledBackground> 
+    <Background> 
       <Login />
-    </StyledBackground>
+    </Background>
   );
 };
 

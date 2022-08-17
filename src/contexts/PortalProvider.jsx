@@ -40,8 +40,18 @@ const PortalProvider = ({ children }) => {
         });
       });
   };
-  const onSubmitRegister = () => {
-
+  const onSubmitRegister = (account) => {
+      account = 	{
+        password: account.password,
+        created: new Date(),
+        isAdmin: false,
+        name: account.name,
+        email: account.email,
+        discordUser: account.discordUser,
+        achievement: [],
+        imgProfile: account.imgProfile
+    }
+    console.log(account)
   }
   return <PortalContext.Provider value={{onSubmitLogin, onSubmitRegister}}>{children}</PortalContext.Provider>;
 };

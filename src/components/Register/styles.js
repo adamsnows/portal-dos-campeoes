@@ -1,13 +1,13 @@
 import styled from 'styled-components';
 import image from '../../images/background.jpg'
 
-const StyledLogin = styled.div`
+const StyledRegister = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     font-family: 'Inter';
-    animation: 2s fadeInDown;
+    animation: 3s fadeIn;
     .animation-header {
         width: 70%;
         animation: 4s fadeInDown;
@@ -20,23 +20,11 @@ const StyledLogin = styled.div`
         justify-content: center;
         align-items: center;
         width: 80%;
-    }
-    
+    }    
     hr {
         width: 40%;
         border: 1px solid rgba(156, 156, 156, 0.3);
         height: 0.1%;
-    }
-    svg {
-        font-size: 2rem;
-        color: #7289da;
-        cursor: pointer;
-    }
-    img {
-        border-radius: 10px;
-        width: 60px;
-        margin-bottom: 2rem;
-        box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.5);
     }
     .login-title {
         width: 100%;
@@ -50,6 +38,7 @@ const StyledLogin = styled.div`
         width: 65%;
     }
     .login-box {
+        margin: 1rem;
         background-color: white;
         border-radius: 10px;
         width: 80%;
@@ -113,6 +102,7 @@ const StyledLogin = styled.div`
             }
         }
         button {
+            margin-top: 1rem;
             width: 50%;
             border-radius: 5px;
             background-color: #313131;
@@ -137,4 +127,4 @@ const StyledLogin = styled.div`
     }
 `;
 
-export default StyledLogin;
+export default StyledRegister;
