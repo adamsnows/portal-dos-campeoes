@@ -66,7 +66,7 @@ const Register = () => {
         </form>
         <span className="login-register">
           Já tem uma conta?{" "}
-          <span className="register-link" onClick={() => navigate("/")}>
+          <span className="register-link" onClick={() => navigate("/login")}>
             Faça Login
           </span>
         </span>
