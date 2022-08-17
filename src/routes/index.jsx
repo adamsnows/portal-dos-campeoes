@@ -2,6 +2,7 @@ import { Routes, Route } from "react-router-dom";
 import LoginPage from "../pages/Login";
 import RegisterPage from "../pages/Register";
 import PortalPage from "../pages/Portal";
+import WayPage from "../pages/Way";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <Routes>
         <Route exact path="/" element={<LoginPage />} />
         <Route path="/register" element={<RegisterPage />} />
+        <Route path="/choose-your-destiny" element={<WayPage />} />
         <Route path="/portal" element={<PortalPage />} />
       </Routes>
     </>
