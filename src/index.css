@@ -1,3 +1,5 @@
+@import 'animate.css';
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -77,4 +79,16 @@ code {
     border-radius: 10px;
     border: 3px solid #f6f6f6;
     align-items: ;
+  }
+
+  .btn-primary {
+    margin-top: 1rem;
+    width: 50%;
+    border-radius: 5px;
+    background-color: #313131;
+    padding: 10px;
+    color: white;
+    font-weight: bolder;
+    border: none;
+    cursor: pointer;
   }

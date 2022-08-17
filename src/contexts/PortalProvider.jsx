@@ -26,7 +26,16 @@ const PortalProvider = ({ children }) => {
           progress: undefined,
           toastId: 1,
         });
-        navigate("/choose-your-destiny");
+
+        const element = document.querySelector(".login-box");
+        element.classList.add(
+          "animate__animated",
+          "animate__fadeOutRight",
+          "animate__fast"
+        );
+        setTimeout(() => {
+          navigate("/choose-your-destiny");
+        }, "800");
       })
       .catch((err) => {
         toast.error("Login ou senha incorreto.", {

@@ -7,11 +7,7 @@ const StyledRegister = styled.div`
     align-items: center;
     justify-content: center;
     font-family: 'Inter';
-    animation: 3s fadeIn;
-    .animation-header {
-        width: 70%;
-        animation: 4s fadeInDown;
-    }
+    animation: 0.8s fadeInDown;
     .discord-animation {
         width: 40%;
     }
@@ -99,19 +95,7 @@ const StyledRegister = styled.div`
                 color: transparent;
                 transition: 0.5s;
             }
-        }
-        button {
-            margin: 1rem 0 1rem 0;            
-            width: 50%;
-            border-radius: 5px;
-            background-color: #313131;
-            padding: 10px;
-            color: white;
-            font-weight: bolder;
-            border: none;
-            cursor: pointer;
-        }
-        
+        }       
         
     }
     @media screen and (min-width: 1024px) {
