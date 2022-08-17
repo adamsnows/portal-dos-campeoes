@@ -13,7 +13,17 @@ const StyledHome = styled.header`
     display: flex;
     gap: 20px;
     box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
-
+    .trophy {
+        width: 10%;
+    }
+    .champion-emphasis {
+        color: hsl(61, 84%, 44%);
+    }
+    .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     .contentHeader {
         display:flex;
         align-items:center;
