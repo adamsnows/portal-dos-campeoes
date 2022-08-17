@@ -2,14 +2,13 @@ import styled from 'styled-components';
 
 export const StyledHome = styled.header`
         width:100%;
-        min-height:75vh;
+        max-height:75vh;
         display:flex;
         flex-direction:column;
         background-image: url("https://wallpaperaccess.com/full/38582.jpg");
         background-position:center;
         background-repeat:no-repeat;
         background-size:cover;
-        box-shadow:inset 0px -12vh 31px -19px #F6F6F6;
         padding: 10px 0;
         display: flex;
         gap: 20px;
@@ -62,6 +61,12 @@ export const StyledHome = styled.header`
         &:hover {
             color: #60707b;
         }
+        .border {
+            max-width:10px;
+            height:10px;
+            position:fixed;
+            top:0
+        }
     }
 `
 export const StyledMain = styled.main`
@@ -90,7 +95,7 @@ export const StyledMain = styled.main`
             flex-direction:column;
             justify-content:center;
             align-items:center;
-            background-color:#f6f6f6;
+            background-color:#fff;
             background-position:center;
             background-repeat:no-repeat;
             background-size:cover;

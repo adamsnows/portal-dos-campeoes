@@ -1,6 +1,7 @@
 import React from "react";
 import { GiLaurelsTrophy } from 'react-icons/gi';
 import  {StyledHome, StyledMain} from "./style";
+import border from "../../images/onda.svg"
 
 const Home = () => {
 
@@ -23,6 +24,7 @@ const Home = () => {
                         <button>FeedBack</button>
                     </nav>
                 </div>
+                <img className="border" src={border} alt=""/>
     </StyledHome>
     <StyledMain>
       <div className="detailsOne">
