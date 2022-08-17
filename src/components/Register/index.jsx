@@ -4,41 +4,71 @@ import { useForm } from "react-hook-form";
 import { useContext } from "react";
 import { PortalContext } from "../../contexts/PortalProvider";
 import { AnimationDiscord, AnimationHeader } from "../Animation";
+import { useNavigate } from "react-router-dom";
 
 const Register = () => {
-  const [showPassword, setShowpassword] = useState();
+  const [showPassword, setShowpassword] = useState("text");
   const { register, handleSubmit } = useForm();
-  const { onSubmitLogin } = useContext(PortalContext);
+  const { onSubmitRegister } = useContext(PortalContext);
+  const navigate = useNavigate();
 
   return (
     <StyledRegister>
       {/* <AnimationHeader /> */}
       <div className="login-box">
-        <span className="login-title">Portal dos Campeões</span>
+        <span className="login-title">Registro dos Campeões</span>
         <span className="login-description">
-          Seja bem vindo ao portal, se não tem um cadastro entre em contato via{" "}
-          <span className="discord-link">discord!</span>
+          Se já tem seu código de invite, faça seu cadastro agora!
         </span>
         <div className="line-discord">
           <hr /> <AnimationDiscord /> <hr />
         </div>
-        <form className="login-form" onSubmit={handleSubmit(onSubmitLogin)}>
-          <label htmlFor="">Seu login</label>
+        <form className="login-form" onSubmit={handleSubmit(onSubmitRegister)}>
+          <label htmlFor="">Seu nome de usuário</label>
           <input
-            {...register("email")}
-            type="email"
-            placeholder="seu-email@quentemail.com"
+            {...register("name")}
+            type="text"
+            placeholder="Campeão Junior da Silva"
           />
           <label htmlFor="">Sua senha</label>
           <input
             {...register("password")}
             type="password"
-            placeholder="********"
+            placeholder="******"
+          />
+          <label htmlFor="">Confirme sua senha</label>
+          <input type="password" placeholder="******" />
+          <label htmlFor="">Seu e-mail</label>
+          <input
+            {...register("email")}
+            type="email"
+            placeholder="campeão-jr@quentemail.com"
+          />
+          <label htmlFor="">Seu usuário no Discord</label>
+          <input
+            {...register("discordUser")}
+            type="text"
+            placeholder="Campeão#9999"
+          />
+          <label htmlFor="">Sua imagem de perfil</label>
+          <input
+            {...register("password")}
+            type="password"
+            placeholder="Link pra sua imagem de avatar"
+          />
+          <label htmlFor="">Seu código de convite</label>
+          <input
+            {...register("password")}
+            type="password"
+            placeholder="CoDiGoAlEaToRiO"
           />
           <button>Registrar</button>
         </form>
         <span className="login-register">
-          Já tem uma conta? <span className="register-link">Faça Login</span>
+          Já tem uma conta?{" "}
+          <span className="register-link" onClick={() => navigate("/")}>
+            Faça Login
+          </span>
         </span>
       </div>
     </StyledRegister>
