@@ -7,7 +7,7 @@ const StyledWay = styled.div`
   align-items: center;
   justify-content: center;
   font-family: "Inter";
-  animation: fadeIn 2s;
+  animation: fadeInRight 0.8s;
   width: 100%;
 
   .way-title {

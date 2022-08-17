@@ -7,7 +7,7 @@ const StyledLogin = styled.div`
     align-items: center;
     justify-content: center;
     font-family: 'Inter';
-    animation: 2s fadeIn;
+    animation: 0.8s fadeInDown;
     .discord-animation {
         width: 40%;
     }
@@ -108,19 +108,7 @@ const StyledLogin = styled.div`
                 color: transparent;
                 transition: 0.5s;
             }
-        }
-        button {
-            width: 50%;
-            border-radius: 5px;
-            background-color: #313131;
-            padding: 10px;
-            color: white;
-            font-weight: bolder;
-            border: none;
-            cursor: pointer;
-        }
-        
-        
+        }          
     }
     @media screen and (min-width: 1024px) {
         .animation-header {

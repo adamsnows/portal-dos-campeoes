@@ -11,6 +11,14 @@ const Register = () => {
   const { register, handleSubmit } = useForm();
   const { onSubmitRegister } = useContext(PortalContext);
   const navigate = useNavigate();
+  
+  const handleLogin = () => {
+    const element = document.querySelector('.login-box');
+    element.classList.add('animate__animated', 'animate__fadeOutUp', 'animate__fast');
+    setTimeout(() => {
+      navigate('/login')
+    }, '800');    
+  }
 
   return (
     <StyledRegister>
@@ -62,11 +70,11 @@ const Register = () => {
             type="password"
             placeholder="CoDiGoAlEaToRiO"
           />
-          <button>Registrar</button>
+          <button className="btn-primary">Registrar</button>
         </form>
         <span className="login-register">
           Já tem uma conta?{" "}
-          <span className="register-link" onClick={() => navigate("/")}>
+          <span className="register-link" onClick={handleLogin}>
             Faça Login
           </span>
         </span>
