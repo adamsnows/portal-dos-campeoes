@@ -15,7 +15,7 @@ export const StyledHome = styled.header`
         display: flex;
         gap: 20px;
         font-family: 'Inter';
-        animation: fadeIn 2s;
+
     .contentHeader {
         display:flex;
         align-items:center;
@@ -72,7 +72,6 @@ export const StyledMain = styled.main`
         min-height:100%;
         display:flex;
         flex-direction:column;
-        animation: fadeIn 2s;
         .background {
             width:100%;
             min-height:75vh;
