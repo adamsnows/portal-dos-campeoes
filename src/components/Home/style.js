@@ -1,13 +1,11 @@
 import styled from 'styled-components';
 
-const StyledHome = styled.header`
+export const StyledHome = styled.header`
     display:flex;
     justify-content:center;
     align-items:center;
     flex-direction:column;
-    width:100%;
-    position:fixed;
-    top:0;
+    max-width:100%;
     background-color: white;
     padding: 20px;
     display: flex;
@@ -62,4 +60,16 @@ const StyledHome = styled.header`
         cursor: pointer;
     }
 `
-export default StyledHome;
+export const StyledMain = styled.main`
+        width:100%;
+        height:90vh;
+    .background {
+        width:100%;
+        height:100%;
+        background-image: url("https://images4.alphacoders.com/936/936378.jpg");
+        background-position:center;
+        background-repeat:no-repeat;
+        background-size:cover;
+        color: #fff;
+    }
+`

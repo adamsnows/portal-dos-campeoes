@@ -1,10 +1,11 @@
 import React from "react";
-import  StyledHome  from "./style";
+import  {StyledHome, StyledMain} from "./style";
 
 const Home = () => {
 
   return (
-    <StyledHome>
+    <>
+        <StyledHome>
                 <div className="contentHeader"> 
                     <div className="title">
                         <h1>Portal dos<span>Campeões</span></h1> 
@@ -15,6 +16,50 @@ const Home = () => {
                     </nav>
                 </div>
     </StyledHome>
+    <StyledMain>
+      <div className="background">
+          <div>
+            <button>erhyrstdhyrthtr</button>
+          </div>
+          <div>
+            <button>drthtdrhtrdh</button>
+          </div>
+      </div>
+      <div>
+          <div>
+            <button>erhyrstdhyrthtr</button>
+          </div>
+          <div>
+            <button>drthtdrhtrdh</button>
+          </div>
+      </div>
+      <div>
+          <div>
+            <button>erhyrstdhyrthtr</button>
+          </div>
+          <div>
+            <button>drthtdrhtrdh</button>
+          </div>
+      </div>
+      <div>
+          <div>
+            <button>erhyrstdhyrthtr</button>
+          </div>
+          <div>
+            <button>drthtdrhtrdh</button>
+          </div>
+      </div>
+      <div>
+          <div>
+            <button>erhyrstdhyrthtr</button>
+          </div>
+          <div>
+            <button>drthtdrhtrdh</button>
+          </div>
+      </div>
+    </StyledMain>
+    </>
+
   )
 }
 export default Home
