@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import image from '../../images/background.jpg'
 
-const StyledLogin = styled.div`
+const StyledRegister = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -137,4 +137,4 @@ const StyledLogin = styled.div`
     }
 `;
 
-export default StyledLogin;
+export default StyledRegister;

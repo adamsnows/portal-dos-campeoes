@@ -1,15 +1,16 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useState } from "react";
 import StyledLogin from "./styles";
-import { FaDiscord } from "react-icons/fa";
 import { useForm } from "react-hook-form";
 import { useContext } from "react";
 import { PortalContext } from "../../contexts/PortalProvider";
 import { AnimationDiscord, AnimationHeader } from "../Animation";
+import { useNavigate } from "react-router-dom";
 
 const Login = () => {
   const [showPassword, setShowpassword] = useState();
   const { register, handleSubmit } = useForm();
   const { onSubmitLogin } = useContext(PortalContext);
+  const navigate = useNavigate()
 
   return (
     <StyledLogin>
@@ -40,7 +41,7 @@ const Login = () => {
           <button>Entrar</button>
         </form>
         <span className="login-register">
-          Não tem uma conta? <span className="register-link">Registre-se</span>
+          Já tem um invite? <span className="register-link" onClick={() => navigate('./register')}>Registre-se</span>
         </span>
       </div>
     </StyledLogin>

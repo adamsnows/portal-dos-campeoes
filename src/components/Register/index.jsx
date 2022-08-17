@@ -1,18 +1,17 @@
-import React, { useEffect, useRef, useState } from "react";
-import StyledLogin from "./styles";
-import { FaDiscord } from "react-icons/fa";
+import React, { useState } from "react";
+import StyledRegister from "./styles";
 import { useForm } from "react-hook-form";
 import { useContext } from "react";
 import { PortalContext } from "../../contexts/PortalProvider";
 import { AnimationDiscord, AnimationHeader } from "../Animation";
 
-const Login = () => {
+const Register = () => {
   const [showPassword, setShowpassword] = useState();
   const { register, handleSubmit } = useForm();
   const { onSubmitLogin } = useContext(PortalContext);
 
   return (
-    <StyledLogin>
+    <StyledRegister>
       {/* <AnimationHeader /> */}
       <div className="login-box">
         <span className="login-title">Portal dos Campeões</span>
@@ -36,15 +35,14 @@ const Login = () => {
             type="password"
             placeholder="********"
           />
-          <span className="forgot-link">Esqueceu a senha?</span>
-          <button>Entrar</button>
+          <button>Registrar</button>
         </form>
         <span className="login-register">
-          Não tem uma conta? <span className="register-link">Registre-se</span>
+          Já tem uma conta? <span className="register-link">Faça Login</span>
         </span>
       </div>
-    </StyledLogin>
+    </StyledRegister>
   );
 };
 
-export default Login;
+export default Register;

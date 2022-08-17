@@ -48,12 +48,13 @@ const StyledLogin = styled.div`
         color: #9C9C9C;
         text-align: center;
         width: 65%;
+        font-size: 0.8rem;
     }
     .login-box {
         background-color: white;
         border-radius: 10px;
         width: 80%;
-        padding: 20px;
+        padding: 40px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -129,10 +130,8 @@ const StyledLogin = styled.div`
         .animation-header {
         width: 20%;
     }
-        .login-box {
-            padding: 40px;
+        .login-box {            
             width: 400px;
-            gap: 30px;
         }
     }
 `;
