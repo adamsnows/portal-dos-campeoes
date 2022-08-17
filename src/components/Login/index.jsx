@@ -38,7 +38,7 @@ const Login = () => {
             placeholder="********"
           />
           <span className="forgot-link">Esqueceu a senha?</span>
-          <button>Entrar</button>
+          <button onClick={() => navigate('/choose-your-way')}>Entrar</button>
         </form>
         <span className="login-register">
           Já tem um invite? <span className="register-link" onClick={() => navigate('./register')}>Registre-se</span>
