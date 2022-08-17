@@ -2,19 +2,20 @@ import styled from 'styled-components';
 
 const StyledHome = styled.header`
     display:flex;
-    justify-content:center;
     align-items:center;
     flex-direction:column;
     width:100%;
     position:fixed;
     top:0;
     background-color: white;
-    padding: 20px;
+    padding: 15px;
     display: flex;
-    gap: 20px;
     box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
+    span {
+        font-size: 1.5rem;
+    }
     .trophy {
-        width: 10%;
+        width: 40px;
     }
     .champion-emphasis {
         color: hsl(61, 84%, 44%);
@@ -22,7 +23,7 @@ const StyledHome = styled.header`
     .logo {
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: inherit;
     }
     .contentHeader {
         display:flex;
@@ -51,8 +52,9 @@ const StyledHome = styled.header`
         justify-content:space-between;
         gap:20px
     }
-    .buttonRegister {
-        width: 100%;
+    .buttonRegister, .buttonLogin {
+        width: 150px;
+        height: 40px;
         border-radius: 5px;
         background-color: rgb(49, 49, 49);
         padding: 10px 15px;
@@ -62,14 +64,7 @@ const StyledHome = styled.header`
         cursor: pointer;
     }
     .buttonLogin {
-        width: 50%;
-        border-radius: 5px;
-        background-color: rgb(49, 49, 49);
-        padding: 10px 15px;
-        color: white;
-        font-weight: bolder;
-        border: none;
-        cursor: pointer;
+        width: 100px;
     }
 `
 export default StyledHome;
