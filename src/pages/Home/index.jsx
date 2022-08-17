@@ -4,9 +4,7 @@ import Home from "../../components/Home";
 
 const Homepage = () => {
   return (
-    <Background>
       <Home />
-    </Background>
   );
 };
 

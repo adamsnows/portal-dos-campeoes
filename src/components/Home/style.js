@@ -1,70 +1,98 @@
 import styled from 'styled-components';
 
-const StyledHome = styled.header`
-    display:flex;
-    align-items:center;
-    flex-direction:column;
-    width:100%;
-    position:fixed;
-    top:0;
-    background-color: white;
-    padding: 15px;
-    display: flex;
-    box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
-    span {
-        font-size: 1.5rem;
-    }
-    .trophy {
-        width: 40px;
-    }
-    .champion-emphasis {
-        color: hsl(61, 84%, 44%);
-    }
-    .logo {
+export const StyledHome = styled.header`
+        width:100%;
+        min-height:75vh;
+        display:flex;
+        flex-direction:column;
+        background-image: url("https://wallpaperaccess.com/full/38582.jpg");
+        background-position:center;
+        background-repeat:no-repeat;
+        background-size:cover;
+        box-shadow:inset 0px -12vh 31px -19px #F6F6F6;
+        padding: 10px 0;
         display: flex;
-        justify-content: center;
-        align-items: inherit;
-    }
+        gap: 20px;
+
     .contentHeader {
         display:flex;
         align-items:center;
-        justify-content:space-between;
-        width:70%;
+        justify-content:center;
+        width:100%;
     }
-    
-    .title {
-        display:flex;
-        align-items:center;
-        gap:5px;
-    }
-    .icon {
-        
-    }
-    h1 {
-        font-weight: bolder;
-        text-align: center;
-        font-size: 1rem;
-    }
-
     nav {
         display:flex;
+        width:80%;
         align-items:center;
         justify-content:space-between;
-        gap:20px
+        gap:70px
     }
-    .buttonRegister, .buttonLogin {
-        width: 150px;
-        height: 40px;
+    .logo {
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        color: #fff;
+    }
+    .icon {
+        font-size:55px;
+    }
+    h1 {
+        text-transform: uppercase;
+        font-weight: bolder;
+    }
+    hr {
+        width:10px;
+        border-color: #fff;
+        color: #fff;
+        background-color: #fff;
+    }
+    button {
+        width: 100%;
         border-radius: 5px;
-        background-color: rgb(49, 49, 49);
+        background-color: rgba(255, 255, 255, 0);
         padding: 10px 15px;
-        color: white;
+        color: #fff;
         font-weight: bolder;
         border: none;
         cursor: pointer;
-    }
-    .buttonLogin {
-        width: 100px;
+        text-transform: uppercase;
+        font-size:0.7rem;
+
+        &:hover {
+            color: #60707b;
+        }
     }
 `
-export default StyledHome;
+export const StyledMain = styled.main`
+        width:100%;
+        min-height:100%;
+        display:flex;
+        flex-direction:column;
+   
+        .background {
+            width:100%;
+            min-height:75vh;
+            display:flex;
+            flex-direction:column;
+            justify-content:center;
+            align-items:center;
+            background-image: url("https://wallpaperaccess.com/full/38582.jpg");
+            background-position:center;
+            background-repeat:no-repeat;
+            background-size:cover;
+            box-shadow:inset 0px -12vh 31px -19px #F6F6F6;
+        }
+        .detailsOne {
+            width:100%;
+            min-height:100vh;
+            display:flex;
+            flex-direction:column;
+            justify-content:center;
+            align-items:center;
+            background-color:#f6f6f6;
+            background-position:center;
+            background-repeat:no-repeat;
+            background-size:cover;
+        }
+`
