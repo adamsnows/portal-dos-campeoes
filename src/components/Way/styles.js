@@ -8,6 +8,7 @@ const StyledWay = styled.div`
   justify-content: center;
   font-family: "Inter";
   animation: fadeIn 2s;
+  width: 100%;
 
   .way-title {
     width: 100%;
@@ -26,27 +27,23 @@ const StyledWay = styled.div`
   .way-box {
     background-color: white;
     border-radius: 10px;
-    width: 80%;
-    padding: 20px;
+    width: 70%;
+    padding: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     gap: 1.5rem;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-
+    .user-profile {
+      width: 100px;
+      border-radius: 50%;
+    }
     .waysContainer {
       display: flex;
       flex-direction: column;
       align-items: center;
       gap: 4rem;
-
-      @media screen and (min-width: 1024px) {
-        padding: 40px;
-        width: 400px;
-        gap: 30px;
-      }
-
       .ways {
         display: flex;
         justify-content: space-between;
@@ -59,14 +56,9 @@ const StyledWay = styled.div`
           gap: 0.5625rem;
           cursor: pointer;
 
-          :hover {
-            .icon {
-              animation: pulse 2s;
-              animation-iteration-count: infinite;
-            }
-          }
-
           .icon {
+            animation: 2s pulse;
+            animation-iteration-count: infinite;
             width: 3.125rem;
             height: 3.125rem;
             border-radius: 5px;
@@ -85,24 +77,29 @@ const StyledWay = styled.div`
       }
     }
   }
-
   .logout {
     background-color: #313131;
     color: #fff;
-    width: 6.6875rem;
-    height: 1.5rem;
+    width: 50%;
+    height: 35px;
     border-radius: 5px;
     border: none;
     cursor: pointer;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     margin-bottom: 1rem;
-
-    @media screen and (min-width: 1024px) {
+  }
+  
+  @media screen and (min-width: 1024px) {
+      .way-box {
+        width: 400px;
+      }
+      .user-profile {
+      width: 20%;
+    }
       width: 150px;
       height: 44px;
       font-size: 1.2rem;
     }
-  }
 `;
 
 export default StyledWay;

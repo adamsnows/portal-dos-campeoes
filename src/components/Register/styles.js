@@ -41,7 +41,7 @@ const StyledRegister = styled.div`
         margin: 1rem;
         background-color: white;
         border-radius: 10px;
-        width: 80%;
+        width: 70%;
         padding: 20px;
         display: flex;
         align-items: center;

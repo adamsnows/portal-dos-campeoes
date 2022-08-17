@@ -5,11 +5,17 @@ import StyledWay from "./styles";
 
 const Way = () => {
   const navigate = useNavigate();
-
+  const user = localStorage.getItem('name')
+  const img = localStorage.getItem('img')
+  const logout = () => {
+    localStorage.clear();
+    navigate("/");
+  };
   return (
     <StyledWay>
       <div className="way-box">
-        <span className="way-title">Escolha seu caminho</span>
+        <img src={img} alt={`Imagem de ${user}`} className="user-profile"/>
+        <span className="way-title">Olá, {user}</span>
         <span className="way-description">Temos algumas opções para você:</span>
 
         <div className="waysContainer">
@@ -43,11 +49,10 @@ const Way = () => {
           </div>
         </div>
 
-        <div>
-          <button onClick={() => navigate("/")} className="logout">
+
+          <button onClick={logout} className="logout">
             Logout
           </button>
-        </div>
       </div>
     </StyledWay>
   );

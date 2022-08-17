@@ -53,7 +53,7 @@ const StyledLogin = styled.div`
     .login-box {
         background-color: white;
         border-radius: 10px;
-        width: 80%;
+        width: 70%;
         padding: 40px;
         display: flex;
         align-items: center;
