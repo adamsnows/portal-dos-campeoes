@@ -38,13 +38,14 @@ const StyledLogin = styled.div`
         width: 100%;
         font-weight: bolder;
         text-align: center;
-        font-size: 2rem;
+        font-size: 3.5rem;
+        font-family: 'Bebas Neue';
     }
     .login-description {
         color: #9C9C9C;
         text-align: center;
         width: 65%;
-        font-size: 0.8rem;
+        font-size: 0.9rem;
     }
     .login-box {
         background-color: white;
