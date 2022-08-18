@@ -83,10 +83,29 @@ code {
     margin-top: 1rem;
     width: 50%;
     border-radius: 5px;
-    background-color: #313131;
+    background-color: white;
     padding: 10px;
-    color: white;
-    font-weight: bolder;
+    color: #60707b;
     border: none;
     cursor: pointer;
+    font-family: 'Bebas Neue';
+    font-size: 1.5rem;
   }
+
+  .login-box {
+    background-color: rgba(0,0,0, 0.7);
+    border-radius: 10px;
+    width: 70%;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    box-shadow: rgba(0,0,0, 0.7) 0px 7px 29px 0px;
+
+}
+.login-register {
+  color: #9C9C9C;
+  font-size: 0.8rem;
+}

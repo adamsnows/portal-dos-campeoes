@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import image from '../../images/background.jpg'
+import image from '../../images/background2.jpg'
 
 const StyledBackground = styled.div`
     max-width: 100vw;

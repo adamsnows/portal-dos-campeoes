@@ -26,14 +26,16 @@ const StyledRegister = styled.div`
         width: 100%;
         font-weight: bolder;
         text-align: center;
-        font-size: 2rem;
+        font-size: 3rem;
+        color: white;
+        font-family: 'Bebas Neue';
     }
     .login-description {
         color: #9C9C9C;
         text-align: center;
         width: 65%;
     }
-    .login-box {
+    /* .login-box {
         margin: 1rem;
         background-color: white;
         border-radius: 10px;
@@ -47,12 +49,13 @@ const StyledRegister = styled.div`
         .login-register {
             color: #9C9C9C;
             font-size: 0.8rem;
-        }
+        } */
     }
     .register-link {
             font-style: italic;
             text-decoration: underline;
             cursor: pointer;
+            color: white;
         }
     .forgot-link {
         cursor: pointer;
@@ -68,17 +71,17 @@ const StyledRegister = styled.div`
         align-items: center;
         gap: 10px;
         width: 100%;
+        
         label,span {
             font-size: 0.8rem;
             width: 80%;
             text-align: left;
-            color: #313131;
+            color: white;
             font-weight: bolder;
         }
         span {
             color: #9C9C9C;
-            font-weight: 500;
-            
+            font-weight: 500;            
         }
 
         input {

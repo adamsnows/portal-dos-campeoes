@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import image from '../../images/background.jpg'
 
 const StyledLogin = styled.div`
     display: flex;
@@ -40,15 +39,16 @@ const StyledLogin = styled.div`
         text-align: center;
         font-size: 3.5rem;
         font-family: 'Bebas Neue';
+        color: white;
     }
     .login-description {
-        color: #9C9C9C;
+        color: white;
         text-align: center;
         width: 65%;
         font-size: 0.9rem;
     }
     .login-box {
-        background-color: white;
+        background-color: rgba(0,0,0, 0.7);
         border-radius: 10px;
         width: 70%;
         padding: 40px;
@@ -57,7 +57,7 @@ const StyledLogin = styled.div`
         justify-content: center;
         flex-direction: column;
         gap: 20px;
-        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        box-shadow: rgba(0,0,0, 0.7) 0px 7px 29px 0px;
         .login-register {
             color: #9C9C9C;
             font-size: 0.8rem;
@@ -86,7 +86,7 @@ const StyledLogin = styled.div`
             font-size: 0.8rem;
             width: 80%;
             text-align: left;
-            color: #313131;
+            color: white;
             font-weight: bolder;
         }
         span {
