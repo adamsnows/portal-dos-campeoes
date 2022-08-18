@@ -3,7 +3,6 @@ import { GiLaurelsTrophy } from "react-icons/gi";
 import { useNavigate } from "react-router-dom";
 import border from "../../../images/onda.svg";
 
-
 const Header = () => {
   const navigate = useNavigate();
   const handleFadeOut = () => {
@@ -27,11 +26,11 @@ const Header = () => {
     const root = document.querySelector("#root");
     root.classList.add("animate__animated", "animate__fadeIn", "animate__fast");
   };
- 
+
   const handleRootOff = () => {
-    const root = document.querySelector('#root')
-    root.className= ""
-  }
+    const root = document.querySelector("#root");
+    root.className = "";
+  };
   const handleLogin = () => {
     handleFadeOut();
     setTimeout(() => {
@@ -39,8 +38,8 @@ const Header = () => {
       navigate("/login");
     }, "1000");
     setTimeout(() => {
-      handleRootOff()
-    }, '1500');
+      handleRootOff();
+    }, "1500");
   };
   const handleRegister = () => {
     handleFadeOut();
@@ -49,30 +48,30 @@ const Header = () => {
       navigate("/register");
     }, "1000");
     setTimeout(() => {
-      handleRootOff()
-    }, '1500');
+      handleRootOff();
+    }, "1500");
   };
 
-  return(
-      <>
-        <div className="contentHeader">
-          <nav>
-            <button>Suporte</button>
-            
-            <button onClick={handleRegister}>Cadastre-se</button>
-            
-            <div className="logo">
-              <GiLaurelsTrophy className="icon"></GiLaurelsTrophy>
-              <h1>Campeões</h1>
-            </div>
-            
-            <button onClick={handleLogin}>Login</button>
-            
-            <button>FeedBack</button>
-          </nav>
-        </div>
-        {/* <img className="border" src={border} alt="" /> */}
-      </>
+  return (
+    <>
+      <div className="contentHeader">
+        <nav>
+          <button>Suporte</button>
+
+          <button onClick={handleRegister}>Cadastre-se</button>
+
+          <div className="logo">
+            <GiLaurelsTrophy className="icon"></GiLaurelsTrophy>
+            <h1 className="title">Campeões</h1>
+          </div>
+
+          <button onClick={handleLogin}>Login</button>
+
+          <button>FeedBack</button>
+        </nav>
+      </div>
+      {/* <img className="border" src={border} alt="" /> */}
+    </>
   );
 };
 
