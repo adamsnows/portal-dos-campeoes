@@ -2,9 +2,10 @@ import React from "react";
 import { GiLaurelsTrophy } from "react-icons/gi";
 import { useNavigate } from "react-router-dom";
 import border from "../../../images/onda.svg";
+
+
 const Header = () => {
   const navigate = useNavigate();
-
   const handleFadeOut = () => {
     const header = document.querySelector(".contentHeader");
     header.classList.add(
@@ -25,6 +26,18 @@ const Header = () => {
     const root = document.querySelector("#root");
     root.classList.add("animate__animated", "animate__fadeIn", "animate__fast");
   };
+
+    const root = document.querySelector('#root')
+    root.classList.add(   
+    "animate__animated",
+    "animate__fadeIn",
+    "animate__fast"
+    )
+ 
+  const handleRootOff = () => {
+    const root = document.querySelector('#root')
+    root.className= ""
+  }
   const handleLogin = () => {
     handleFadeOut();
     setTimeout(() => {
@@ -40,7 +53,7 @@ const Header = () => {
     }, "1000");
   };
 
-  return (
+  return(
       <>
         <div className="contentHeader">
           <nav>
