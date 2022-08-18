@@ -13,7 +13,7 @@ const Register = () => {
   const navigate = useNavigate();
   
   const handleLogin = () => {
-    const element = document.querySelector('.login-box');
+    const element = document.querySelector('.login-register-box');
     element.classList.add('animate__animated', 'animate__fadeOutUp', 'animate__fast');
     setTimeout(() => {
       navigate('/login')
@@ -23,7 +23,7 @@ const Register = () => {
   return (
     <StyledRegister>
       {/* <AnimationHeader /> */}
-      <div className="login-box">
+      <div className="login-register-box">
         <span className="login-title">Registro dos Campeões</span>
         <span className="login-description">
           Se já tem seu código de invite, faça seu cadastro agora!

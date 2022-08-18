@@ -69,7 +69,7 @@ const StyledRegister = styled.div`
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 10px;
+        gap: 5px;
         width: 100%;
         
         label,span {
@@ -105,7 +105,7 @@ const StyledRegister = styled.div`
         .animation-header {
         width: 20%;
     }
-        .login-box {
+        .login-register-box {
             padding: 40px;
             width: 400px;
             gap: 30px;

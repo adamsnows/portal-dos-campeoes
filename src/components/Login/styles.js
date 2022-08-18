@@ -14,18 +14,13 @@ const StyledLogin = styled.div`
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 80%;
+        width: 80%;        
     }
     
     hr {
         width: 40%;
         border: 1px solid rgba(156, 156, 156, 0.3);
         height: 0.1%;
-    }
-    svg {
-        font-size: 2rem;
-        color: #7289da;
-        cursor: pointer;
     }
     img {
         border-radius: 10px;
@@ -47,7 +42,7 @@ const StyledLogin = styled.div`
         width: 65%;
         font-size: 0.9rem;
     }
-    .login-box {
+    /* .login-box {
         background-color: rgba(0,0,0, 0.7);
         border-radius: 10px;
         width: 70%;
@@ -62,7 +57,7 @@ const StyledLogin = styled.div`
             color: #9C9C9C;
             font-size: 0.8rem;
         }
-    }
+    } */
     .register-link {
             font-style: italic;
             text-decoration: underline;
@@ -115,7 +110,7 @@ const StyledLogin = styled.div`
         .animation-header {
         width: 20%;
     }
-        .login-box {            
+        .login-register-box {            
             width: 400px;
         }
     }

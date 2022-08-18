@@ -11,7 +11,7 @@ const Login = () => {
   const { onSubmitLogin } = useContext(PortalContext);
   const navigate = useNavigate()
   const handleRegister = () => {
-    const element = document.querySelector('.login-box');
+    const element = document.querySelector('.login-register-box');
     element.classList.add('animate__animated', 'animate__fadeOutUp', 'animate__fast');
     setTimeout(() => {
       navigate('/register')
@@ -20,14 +20,14 @@ const Login = () => {
   return (
     <StyledLogin>
       {/* <AnimationHeader /> */}
-      <div className={`login-box`}>
+      <div className={`login-register-box`}>
         <span className="login-title">Portal dos Campeões</span>
         <span className="login-description">
           Seja bem vindo ao portal, se não tem um cadastro entre em contato via{" "}
           <span className="discord-link">discord!</span>
         </span>
         <div className="line-discord">
-          <hr /> <AnimationDiscord /> <hr />
+          <hr /> <AnimationDiscord classList="animated-discord" /> <hr />
         </div>
         <form className="login-form" onSubmit={handleSubmit(onSubmitLogin)}>
           <label htmlFor="">Seu login</label>
