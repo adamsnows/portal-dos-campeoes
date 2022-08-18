@@ -7,15 +7,20 @@ import { AnimationDiscord, AnimationHeader } from "../Animation";
 import { useNavigate } from "react-router-dom";
 
 const Login = () => {
-  const [showPassword, setShowpassword] = useState();
   const { register, handleSubmit } = useForm();
   const { onSubmitLogin } = useContext(PortalContext);
   const navigate = useNavigate()
-
+  const handleRegister = () => {
+    const element = document.querySelector('.login-box');
+    element.classList.add('animate__animated', 'animate__fadeOutUp', 'animate__fast');
+    setTimeout(() => {
+      navigate('/register')
+    }, '800');    
+  }
   return (
     <StyledLogin>
       {/* <AnimationHeader /> */}
-      <div className="login-box">
+      <div className={`login-box`}>
         <span className="login-title">Portal dos Campeões</span>
         <span className="login-description">
           Seja bem vindo ao portal, se não tem um cadastro entre em contato via{" "}
@@ -38,10 +43,10 @@ const Login = () => {
             placeholder="********"
           />
           <span className="forgot-link">Esqueceu a senha?</span>
-          <button>Entrar</button>
+          <button className="btn-primary">Entrar</button>
         </form>
         <span className="login-register">
-          Já tem um invite? <span className="register-link" onClick={() => navigate('./register')}>Registre-se</span>
+          Já tem um invite? <span className="register-link" onClick={handleRegister}>Registre-se</span>
         </span>
       </div>
     </StyledLogin>

@@ -2,9 +2,10 @@ import React from "react";
 import { GiLaurelsTrophy } from 'react-icons/gi';
 import  {StyledHome, StyledMain} from "./style";
 import border from "../../images/onda.svg"
+import { useNavigate } from "react-router-dom";
+import Header from "./Header";
 
 const Home = () => {
-
   return (
     <>
         <StyledHome>
@@ -31,8 +32,15 @@ const Home = () => {
         <h1>regergesr</h1>
       </div>
     </StyledMain>
+      <StyledHome>
+        <Header />
+      </StyledHome>
+      <StyledMain>
+        <div className="detailsOne">
+          <h1>regergesr</h1>
+        </div>
+      </StyledMain>
     </>
-
-  )
-}
-export default Home
+  );
+};
+export default Home;
