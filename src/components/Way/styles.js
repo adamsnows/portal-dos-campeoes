@@ -12,9 +12,10 @@ const StyledWay = styled.div`
 
   .way-title {
     width: 100%;
-    font-weight: bolder;
     text-align: center;
-    font-size: 2rem;
+    font-size: 3rem;
+    color: white;
+    font-family: 'Bebas Neue';
   }
 
   .way-description {
@@ -25,7 +26,7 @@ const StyledWay = styled.div`
   }
 
   .way-box {
-    background-color: white;
+    background-color: rgba(0,0,0, 0.7);
     border-radius: 10px;
     width: 70%;
     padding: 40px;
@@ -34,7 +35,7 @@ const StyledWay = styled.div`
     justify-content: center;
     flex-direction: column;
     gap: 1.5rem;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    box-shadow: rgba(0,0,0, 0.7) 0px 7px 29px 0px;
     .user-profile {
       width: 100px;
       border-radius: 50%;
@@ -70,16 +71,18 @@ const StyledWay = styled.div`
           }
 
           span {
+            color: white;
             font-size: 1rem;
             font-weight: 300;
+            font-family: 'Bebas Neue';
           }
         }
       }
     }
   }
   .logout {
-    background-color: #313131;
-    color: #fff;
+    background-color: white;
+    color: black;
     width: 50%;
     height: 35px;
     border-radius: 5px;

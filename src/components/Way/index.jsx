@@ -50,7 +50,7 @@ const Way = () => {
         </div>
 
 
-          <button onClick={logout} className="logout">
+          <button onClick={logout} className="btn-primary">
             Logout
           </button>
       </div>

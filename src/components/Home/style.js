@@ -4,7 +4,6 @@ import bg from "../../images/bghome.jpg";
 export const StyledHome = styled.header`
   width: 100%;
   height: 60vh;
-  display: flex;
   flex-direction: column;
   background-image: url(${bg});
   background-position: center;

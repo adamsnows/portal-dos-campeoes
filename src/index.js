@@ -23,7 +23,7 @@ root.render(
           pauseOnFocusLoss
           draggable
           pauseOnHover
-          toastStyle={{ backgroundColor: 'white', color: "black" }}
+          toastStyle={{ backgroundColor: 'black', color: "white" }}
         />
       </PortalProvider>
     </BrowserRouter>
