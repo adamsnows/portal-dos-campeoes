@@ -12,7 +12,6 @@ const Home = () => {
         <div className="detailsOne">
           <h1>regergesr</h1>
         </div>
-        <div></div>
       </StyledMain>
     </>
   );
