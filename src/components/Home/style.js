@@ -1,15 +1,16 @@
 import styled from "styled-components";
-import bg from "../../images/bghome.jpg";
+import bg from "../../images/background2.jpg";
 
 export const StyledHome = styled.header`
   width: 100%;
-  height: 60vh;
+  height: 80vh;
   flex-direction: column;
   background-image: url(${bg});
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  box-shadow: inset 0px -80px 50px -15px #fff;
+  /* box-shadow: inset 0px -80px 50px -15px #fff; */
+  box-shadow: inset 0px -50px 25px -21px rgba(255,255,255,1);
   padding: 10px 0;
   display: flex;
   gap: 20px;
@@ -22,7 +23,7 @@ export const StyledHome = styled.header`
     justify-content: space-around;
     gap: 70px;
     border-radius: 5px;
-    background-color: rgba(0, 0, 0, 0.25);
+    background-color: rgba(0, 0, 0, 0.5);
     padding: 5px 0 5px 0;
     box-shadow: rgba(0, 0, 0, 0.4) 0px 3px 8px;
     font-family: "Bebas Neue";
