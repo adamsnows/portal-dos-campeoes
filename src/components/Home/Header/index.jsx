@@ -38,17 +38,12 @@ const Header = () => {
     const root = document.querySelector('#root')
     root.className= ""
   }
-
   const handleLogin = () => {
     handleFadeOut();
     setTimeout(() => {
       handleRoot();
       navigate("/login");
     }, "1000");
-    setTimeout(() => {
-      handleRootOff()
-    }, "1500");
-
   };
   const handleRegister = () => {
     handleFadeOut();
@@ -56,10 +51,6 @@ const Header = () => {
       handleRoot();
       navigate("/register");
     }, "1000");
-    setTimeout(() => {
-      handleRootOff()
-    }, "1500");
-
   };
 
   return(
