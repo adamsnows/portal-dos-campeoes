@@ -15,6 +15,7 @@ export const StyledHome = styled.header`
         display: flex;
         gap: 20px;
         font-family: 'Inter';
+
         nav {
             display:flex;
             width:80%;
@@ -83,7 +84,6 @@ export const StyledMain = styled.main`
         min-height:100%;
         display:flex;
         flex-direction:column;
-   
         .background {
             width:100%;
             min-height:75vh;
