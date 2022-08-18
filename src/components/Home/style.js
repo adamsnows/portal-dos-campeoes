@@ -16,11 +16,15 @@ export const StyledHome = styled.header`
         gap: 20px;
         font-family: 'Inter';
         nav {
-            border-radius: 5px;
-            width: 100%;
-            background-color: rgba(255, 255, 255, 0.5);
+            display:flex;
+            width:80%;
+            align-items:center;
+            justify-content:space-around;
+            gap:70px;
+            border-radius: 5px;            
+            background-color: rgba(0,0,0, 0.25);
             padding: 5px 0 5px 0;
-            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            box-shadow: rgba(0, 0, 0, 0.4) 0px 3px 8px;
             font-family: 'Bebas Neue';
         }
     .contentHeader {
@@ -28,13 +32,6 @@ export const StyledHome = styled.header`
         align-items:center;
         justify-content:center;
         width:100%;
-    }
-    nav {
-        display:flex;
-        width:80%;
-        align-items:center;
-        justify-content:space-around;
-        gap:70px
     }
     .logo {
         display:flex;
@@ -45,7 +42,7 @@ export const StyledHome = styled.header`
     }
     .icon {
         font-size:55px;
-        color: black;
+        color: white;
         transition: 0.5s;
         cursor: pointer;
         :hover {
@@ -55,7 +52,7 @@ export const StyledHome = styled.header`
     h1 {
         text-transform: uppercase;
         font-weight: bolder;
-        color: black;
+        color: white;
         font-size: 2rem;
         transition: 0.5s;
         cursor: pointer;
@@ -65,10 +62,10 @@ export const StyledHome = styled.header`
         
     }
     button {
-        border-radius: 5px;
+        border-radius: 10px;
         background-color: transparent;
         padding: 5px 20px;
-        color: black;
+        color: white;
         font-size: 2rem;
         border: none;
         cursor: pointer;
@@ -77,7 +74,7 @@ export const StyledHome = styled.header`
         font-family: 'Bebas Neue';
         :hover {
             color: #FFE600;
-            background-color: rgba(0,0,0, 0.8);
+            background-color: rgba(255,255,255, 0.1);
         }
     }
 `
