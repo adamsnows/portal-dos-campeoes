@@ -22,17 +22,11 @@ const Header = () => {
     const bg = document.querySelector("header");
     bg.classList.add("animate__animated", "animate__fadeOut", "animate__fast");
   };
+
   const handleRoot = () => {
     const root = document.querySelector("#root");
     root.classList.add("animate__animated", "animate__fadeIn", "animate__fast");
   };
-
-    const root = document.querySelector('#root')
-    root.classList.add(   
-    "animate__animated",
-    "animate__fadeIn",
-    "animate__fast"
-    )
  
   const handleRootOff = () => {
     const root = document.querySelector('#root')

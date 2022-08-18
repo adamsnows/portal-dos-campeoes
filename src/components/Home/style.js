@@ -52,7 +52,6 @@ export const StyledHome = styled.header`
     }
     h1 {
         text-transform: uppercase;
-        font-weight: bolder;
         color: white;
         font-size: 2rem;
         transition: 0.5s;
