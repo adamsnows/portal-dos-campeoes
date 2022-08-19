@@ -19,8 +19,9 @@ const StyledLogin = styled.div`
     
     hr {
         width: 40%;
-        border: 1px solid rgba(156, 156, 156, 0.3);
+        border: 2px solid rgba(156, 156, 156, 0.3);
         height: 0.1%;
+        border-radius: 5px;
     }
     img {
         border-radius: 10px;
