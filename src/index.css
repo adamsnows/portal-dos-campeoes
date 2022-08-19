@@ -100,7 +100,7 @@ code {
     background-color: rgba(0,0,0, 0.7);
     border-radius: 10px;
     width: 70%;
-    max-height: 77vh;
+    max-height: 50em;
     padding: 35px;
     display: flex;
     align-items: center;
