@@ -24,7 +24,6 @@ const StyledRegister = styled.div`
     }
     .login-title {
         width: 100%;
-        font-weight: bolder;
         text-align: center;
         font-size: 3rem;
         color: white;

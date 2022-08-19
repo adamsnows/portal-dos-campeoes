@@ -30,7 +30,6 @@ const StyledLogin = styled.div`
     }
     .login-title {
         width: 100%;
-        font-weight: bolder;
         text-align: center;
         font-size: 3.5rem;
         font-family: 'Bebas Neue';

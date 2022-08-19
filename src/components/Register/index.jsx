@@ -36,7 +36,7 @@ const Register = () => {
           <input
             {...register("name")}
             type="text"
-            placeholder="Campeão Junior da Silva"
+            placeholder="Campeão Junior Souza da Silva"
           />
           <label htmlFor="">Sua senha</label>
           <input
