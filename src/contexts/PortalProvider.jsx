@@ -26,7 +26,6 @@ const PortalProvider = ({ children }) => {
           progress: undefined,
           toastId: 1,
         });
-
         const element = document.querySelector(".login-register-box");
         element.classList.add(
           "animate__animated",

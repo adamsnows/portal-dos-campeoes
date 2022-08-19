@@ -1,36 +1,39 @@
 import React from "react";
 import { GiLaurelsTrophy } from "react-icons/gi";
 import { useNavigate } from "react-router-dom";
-import border from "../../../images/onda.svg";
+
+export const handleRoot = () => {
+  const root = document.querySelector("#root");
+  root.classList.add("animate__animated", "animate__fadeIn", "animate__fast");
+};
+
+export const handleRootOff = () => {
+  const root = document.querySelector("#root");
+  root.className = "";
+};
 
 const Header = () => {
   const navigate = useNavigate();
   const handleFadeOut = () => {
-    const header = document.querySelector(".contentHeader");
-    header.classList.add(
+  const header = document.querySelector(".contentHeader");
+  header.classList.add(
       "animate__animated",
       "animate__fadeOutUp",
       "animate__fast"
-    );
-    const main = document.querySelector("main");
-    main.classList.add(
+  );
+  const main = document.querySelector("main");
+  main.classList.add(
       "animate__animated",
       "animate__fadeOut",
       "animate__fast"
-    );
-    const bg = document.querySelector("header");
+  );
+    
+  const bg = document.querySelector("header");
     bg.classList.add("animate__animated", "animate__fadeOut", "animate__fast");
   };
 
-  const handleRoot = () => {
-    const root = document.querySelector("#root");
-    root.classList.add("animate__animated", "animate__fadeIn", "animate__fast");
-  };
 
-  const handleRootOff = () => {
-    const root = document.querySelector("#root");
-    root.className = "";
-  };
+
   const handleLogin = () => {
     handleFadeOut();
     setTimeout(() => {
@@ -41,6 +44,7 @@ const Header = () => {
       handleRootOff();
     }, "1500");
   };
+
   const handleRegister = () => {
     handleFadeOut();
     setTimeout(() => {
