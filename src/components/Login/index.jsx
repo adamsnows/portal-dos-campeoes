@@ -15,7 +15,7 @@ const Login = () => {
     element.classList.add('animate__animated', 'animate__fadeOutUp', 'animate__fast');
     setTimeout(() => {
       navigate('/register')
-    }, '800');    
+    }, '500');    
   }
   return (
     <StyledLogin>

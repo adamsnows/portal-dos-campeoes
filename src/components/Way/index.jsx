@@ -34,11 +34,14 @@ const Way = () => {
     handleRoot()
     setTimeout(() => {
     navigate("/");
-    }, '800');
+    handleRootOff()
+    }, '500');
+    setTimeout(() => { 
+      handleRootIn()     
+    }, '500');   
     setTimeout(() => {
-      handleRootOff()
-      handleRootIn()      
-      }, '900');    
+      handleRootOff() 
+    }, '1600'); 
   };
   
  

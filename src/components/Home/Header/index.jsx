@@ -1,10 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import { GiLaurelsTrophy } from "react-icons/gi";
 import { useNavigate } from "react-router-dom";
 
 export const handleRoot = () => {
   const root = document.querySelector("#root");
-  root.classList.add("animate__animated", "animate__fadeIn", "animate__fast");
+  root.classList.add("animate__animated", "animate__fadeIn", "animate__faster");
 };
 
 export const handleRootOff = () => {
@@ -14,32 +14,31 @@ export const handleRootOff = () => {
 
 const Header = () => {
   const navigate = useNavigate();
+
   const handleFadeOut = () => {
   const header = document.querySelector(".contentHeader");
   header.classList.add(
       "animate__animated",
       "animate__fadeOutUp",
-      "animate__fast"
+      "animate__faster"
   );
   const main = document.querySelector("main");
   main.classList.add(
       "animate__animated",
       "animate__fadeOut",
-      "animate__fast"
+      "animate__faster"
   );
     
   const bg = document.querySelector("header");
-    bg.classList.add("animate__animated", "animate__fadeOut", "animate__fast");
+    bg.classList.add("animate__animated", "animate__fadeOut", "animate__faster");
   };
-
-
 
   const handleLogin = () => {
     handleFadeOut();
     setTimeout(() => {
       handleRoot();
       navigate("/login");
-    }, "1000");
+    }, "500");
     setTimeout(() => {
       handleRootOff();
     }, "1500");
@@ -50,7 +49,7 @@ const Header = () => {
     setTimeout(() => {
       handleRoot();
       navigate("/register");
-    }, "1000");
+    }, "500");
     setTimeout(() => {
       handleRootOff();
     }, "1500");

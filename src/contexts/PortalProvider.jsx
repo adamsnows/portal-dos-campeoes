@@ -10,7 +10,7 @@ const PortalProvider = ({ children }) => {
   const onSubmitLogin = (account) => {
     api
       .post("/login", account)
-      .then((res) => {
+      .then((res) => { 
         localStorage.setItem("token", res.data.accessToken);
         localStorage.setItem("name", res.data.user.name);
         localStorage.setItem("badges", res.data.user.achievement);

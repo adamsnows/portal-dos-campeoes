@@ -17,7 +17,7 @@ const Register = () => {
     element.classList.add('animate__animated', 'animate__fadeOutUp', 'animate__fast');
     setTimeout(() => {
       navigate('/login')
-    }, '800');    
+    }, '500');    
   }
 
   return (
