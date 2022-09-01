@@ -1,9 +1,10 @@
+import { useEffect } from "react";
 import { Routes, Route, useNavigate } from "react-router-dom";
+
 import LoginPage from "../pages/Login";
 import RegisterPage from "../pages/Register";
 import PortalPage from "../pages/Portal";
 import WayPage from "../pages/Way";
-import { useEffect } from "react";
 import Homepage from "../pages/Home";
 
 function App() {
@@ -15,7 +16,7 @@ function App() {
     navigate('/choose-your-destiny')
     :
     navigate('/')
-  }, [])
+  }, [navigate, token])
   
   return (
     <>

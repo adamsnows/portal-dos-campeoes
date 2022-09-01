@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { GiLaurelsTrophy } from "react-icons/gi";
 import { useNavigate } from "react-router-dom";
 
@@ -73,7 +73,6 @@ const Header = () => {
           <button>FeedBack</button>
         </nav>
       </div>
-      {/* <img className="border" src={border} alt="" /> */}
     </>
   );
 };
