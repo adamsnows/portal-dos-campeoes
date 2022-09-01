@@ -1,13 +1,12 @@
-import React, { useState } from "react";
+import React from "react";
 import StyledRegister from "./styles";
 import { useForm } from "react-hook-form";
 import { useContext } from "react";
 import { PortalContext } from "../../contexts/PortalProvider";
-import { AnimationDiscord, AnimationHeader } from "../Animation";
+import { AnimationDiscord } from "../Animation";
 import { useNavigate } from "react-router-dom";
 
 const Register = () => {
-  const [showPassword, setShowpassword] = useState("text");
   const { register, handleSubmit } = useForm();
   const { onSubmitRegister } = useContext(PortalContext);
   const navigate = useNavigate();

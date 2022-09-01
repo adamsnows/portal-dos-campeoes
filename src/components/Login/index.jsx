@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import StyledLogin from "./styles";
 import { useForm } from "react-hook-form";
 import { useContext } from "react";
 import { PortalContext } from "../../contexts/PortalProvider";
-import { AnimationDiscord, AnimationHeader } from "../Animation";
+import { AnimationDiscord } from "../Animation";
 import { useNavigate } from "react-router-dom";
 
 const Login = () => {
@@ -19,7 +19,6 @@ const Login = () => {
   }
   return (
     <StyledLogin>
-      {/* <AnimationHeader /> */}
       <div className={`login-register-box`}>
         <span className="login-title">Portal dos Campeões</span>
         <span className="login-description">
@@ -27,7 +26,8 @@ const Login = () => {
           <span className="discord-link">discord!</span>
         </span>
         <div className="line-discord">
-          <hr /> <AnimationDiscord classList="animated-discord" /> <hr />
+          <hr /> 
+          <AnimationDiscord classList="animated-discord" /> <hr />
         </div>
         <form className="login-form" onSubmit={handleSubmit(onSubmitLogin)}>
           <label htmlFor="">Seu login</label>
